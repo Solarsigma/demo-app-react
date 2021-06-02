@@ -19,7 +19,7 @@ import DataProvider from './context/ProductContext'
 
 ReactDOM.render(
   <DataProvider>
-    <Router>
+    <Router forceRefresh={true}>
       <Header />
       <Switch>
         <Route path="/" exact component={Main}></Route>
