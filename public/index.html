@@ -13,8 +13,22 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="//assets.adobedtm.com/a49994c1c918/fbc14da1783f/launch-ca0849b7c889-development.min.js" async></script>
+    <script>
+      var digitalData = digitalData || {};
+        digitalData = {
+          page: {
+            pageName: "Main page",
+            siteSection: "",
+            siteSubsection: "",
+            server: "India Server"
+          },
+          customer: {
+            loginStatus: "",
+          },
+        };
+    </script>
     <title>React Demo App</title>
+    <script src="//assets.adobedtm.com/a49994c1c918/fbc14da1783f/launch-ca0849b7c889-development.min.js" async></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
