@@ -1,0 +1,10 @@
+.Body {
+	text-align: center;
+	color: blue;
+	min-height: 80vh;
+}
+
+.Body-list {
+	text-align: left;
+	color:  red;
+}

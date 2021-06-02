@@ -1,0 +1,17 @@
+.media {
+    min-height: 340px;
+}
+
+.root {
+    max-width: 350px;
+}
+
+.content {
+    text-align: 'center';
+    height: 10px;
+    padding-top: 0;
+}
+
+.actionArea {
+    min-height: 400px;
+}

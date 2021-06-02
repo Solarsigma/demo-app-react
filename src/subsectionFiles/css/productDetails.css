@@ -1,0 +1,21 @@
+.details {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5% 10%;
+}
+
+.prodTitle {
+    font-size: 50;
+}
+
+.prodImg {
+    height: 20em;
+    padding: 2%;
+}
+
+.prodDesc {
+    font-size: 20;
+    padding: 2%;
+}
