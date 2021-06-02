@@ -7,6 +7,9 @@ class Children extends React.Component {
 	static contextType = DataContext;
 
 	render() {
+
+		window.digitalData.page.pageName = "Childrens page"; 
+
 		const {products} = this.context;
 		const genre = "children";
 

@@ -13,6 +13,8 @@ class Cart extends React.Component {
     }
 
 	render() {
+        window.digitalData.page.pageName = "Cart page"; 
+
 		const {cart,increase,reduction,removeProduct,total} = this.context;
         const imgArr = cart.map((product) => (require(`../subsectionFiles/images/${product.genre}/${product.src}`)));
 

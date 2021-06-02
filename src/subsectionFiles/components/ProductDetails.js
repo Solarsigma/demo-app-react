@@ -14,6 +14,9 @@ class ProductDetails extends React.Component {
 	static contextType = DataContext;
 
 	render() {
+
+		window.digitalData.page.pageName = "Product Details page";
+
 		const {products, addCart, removeProduct, addedToCart} = this.context;
 
 		const { match } = this.props;

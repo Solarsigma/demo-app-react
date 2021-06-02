@@ -7,6 +7,8 @@ class Womens extends React.Component {
 	static contextType = DataContext;
 
 	render() {
+		window.digitalData.page.pageName = "Womens page"; 
+
 		const {products} = this.context;
 
 		const genre = "womens";
