@@ -218,7 +218,7 @@ class DataProvider extends Component {
                     "description": "Excepteur sint occaecat cupidatat non proident",
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 64,
-                    "downloadlink": "../books/book1.pdf",
+                    "downloadlink": "/pdfs/book1.pdf",
                     "genre": "book",
                     "count": 1,
                     "addedToCart": false
@@ -230,7 +230,7 @@ class DataProvider extends Component {
                     "description": "Excepteur sint occaecat cupidatat non proident",
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 64,
-                    "downloadlink": "../books/book2.pdf",
+                    "downloadlink": "/pdfs/book2.pdf",
                     "genre": "book",
                     "count": 1,
                     "addedToCart": false
@@ -242,7 +242,7 @@ class DataProvider extends Component {
                     "description": "Excepteur sint occaecat cupidatat non proident",
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 64,
-                    "downloadlink": "../books/book3.pdf",
+                    "downloadlink": "/pdfs/book3.pdf",
                     "genre": "book",
                     "count": 1,
                     "addedToCart": false
@@ -254,7 +254,7 @@ class DataProvider extends Component {
                     "description": "Excepteur sint occaecat cupidatat non proident",
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 64,
-                    "downloadlink": "../books/book4.pdf",
+                    "downloadlink": "/pdfs/book4.pdf",
                     "genre": "book",
                     "count": 1,
                     "addedToCart": false
@@ -266,7 +266,7 @@ class DataProvider extends Component {
                     "description": "Excepteur sint occaecat cupidatat non proident",
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 64,
-                    "downloadlink": "../books/book5.pdf",
+                    "downloadlink": "/pdfs/book5.pdf",
                     "genre": "book",
                     "count": 1,
                     "addedToCart": false
@@ -278,7 +278,7 @@ class DataProvider extends Component {
                     "description": "Excepteur sint occaecat cupidatat non proident",
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 64,
-                    "downloadlink": "../books/book6.pdf",
+                    "downloadlink": "/pdfs/book6.pdf",
                     "genre": "book",
                     "count": 1,
                     "addedToCart": false

@@ -23,14 +23,14 @@ ReactDOM.render(
       <Header />
       <Switch>
         <Route path="/" exact component={Main}></Route>
-        <Route path="/books/:prod" component={Singlebook}></Route>
-        <Route path="/:genre/:prod" component={ProductDetails}></Route>
         <Route path="/mens" component={Mens}></Route>
         <Route path="/womens" component={Womens}></Route>
         <Route path="/children" component={Children}></Route>
         <Route path="/book" exact component={Books}></Route>
         <Route path="/cart" component={Cart}></Route>
         <Route path="/payment" component={OrderPlaced}></Route>
+        <Route path="/books/:prod" component={Singlebook}></Route>
+        <Route path="/:genre/:prod" component={ProductDetails}></Route>
         <Route path="*" component={Error404}></Route>
       </Switch>
       {/* <Main/> */}

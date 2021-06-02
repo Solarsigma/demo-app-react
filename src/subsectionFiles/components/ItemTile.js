@@ -48,7 +48,7 @@ class ItemTile extends React.Component {
             }
             
             {isBook ?
-              <Link to={bookLink}>
+              <Link to={bookLink} target="_blank">
                 <Button variant='contained' size='small' color='primary'>
                   Download
                 </Button>
