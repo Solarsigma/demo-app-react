@@ -1,4 +1,6 @@
 import React from 'react'
+import { BrowserRouter as Router  } from 'react-router-dom'
+import { Switch, Link } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import ItemTile from './ItemTile'
 
@@ -27,6 +29,7 @@ const SalesShowcase = function(props) {
 					})}
 				</Grid>
 			</div>
+			<hr/>
 		</>
 	);
 }

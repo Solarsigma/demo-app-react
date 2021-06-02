@@ -11,6 +11,7 @@ class OrderPlaced extends React.Component {
     }
 
 	render() {
+		const {clearCart} = this.context;
         
 		return (
 			<>

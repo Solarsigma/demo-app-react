@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import mensImage from '../images/Main/mens.jpg'
 import './cart.css'
 import {DataContext} from '../context/ProductContext'
 
@@ -41,7 +42,7 @@ class Cart extends React.Component {
                                 <button className="count" onClick={() => increase(item.uid)}> + </button>
                             </div>  
                         </div>
-                        <div className="delete" onClick={() => removeProduct(item.uid)}>X</div>
+                        <div className="delete" onClick={() => removeProduct(item.title)}>X</div>
                     </div>
                 ))
             }

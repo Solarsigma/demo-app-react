@@ -1,4 +1,5 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button'
 import { Link } from 'react-router-dom'
 import Error404 from './Error404'
@@ -13,14 +14,14 @@ class ProductDetails extends React.Component {
 	static contextType = DataContext;
 
 	render() {
-		const {products, addCart} = this.context;
+		const {products, addCart, removeProduct, addedToCart} = this.context;
 
 		const { match } = this.props;
 		const productName = match.params.prod;
 		const genre = match.params.genre;
 		const truGenre = Genres.find(trugnr => genre === trugnr);
 
-
+		console.log("Inside product details");
 		if(truGenre) {
 			const truItems = nums.map((num) => `${truGenre}${num}`);
 			const truItem = truItems.find(truitm => productName === truitm);
@@ -37,27 +38,27 @@ class ProductDetails extends React.Component {
 
 		var prodContent = "";
 
-		if (genre==='mens'){
+		if (genre=='mens'){
 			products.Mens.map(product => {
-				if (product.title === productName){
+				if (product.title == productName){
 					prodContent = product.content
 				}
 			})
-		}else if (genre==='womens'){
+		}else if (genre=='womens'){
 			products.Womens.map(product => {
-				if (product.title === productName){
+				if (product.title == productName){
 					prodContent = product.content
 				}
 			})
-		}else if (genre==='children'){
+		}else if (genre=='children'){
 			products.Childrens.map(product => {
-				if (product.title === productName){
+				if (product.title == productName){
 					prodContent = product.content
 				}
 			})
-		}else if (genre==='book'){
+		}else if (genre=='book'){
 			products.Books.map(product => {
-				if (product.title === productName){
+				if (product.title == productName){
 					prodContent = product.content
 				}
 			})
@@ -70,10 +71,14 @@ class ProductDetails extends React.Component {
 					<div className='row'>
 						<h2 className="prodTitle"> { productName }</h2>
 						<p className="prodDesc"> {prodContent} </p>
-						<Button onClick={()=> addCart(productName, genre)} color='primary' variant='contained' size='large'>Add to Cart</Button>
+						{addedToCart(productName)?
+							<Button onClick={()=> addCart(productName, genre)} color='primary' variant='contained' size='large'>Add to Cart</Button>:
+							<Button onClick={()=> removeProduct(productName)} color='primary' variant='contained' size='large'>Added</Button>
+						}
 					</div>
 				</div>
 				<Link to={`/${genre}`} className="backButton"><Button color='secondary' variant='contained'> Back </Button></Link>
+				<hr/>
 			</>
 		);
 	}

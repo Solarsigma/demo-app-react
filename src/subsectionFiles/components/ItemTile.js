@@ -1,11 +1,12 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
 import CardMedia from '@material-ui/core/CardMedia'
 import Button from '@material-ui/core/Button'
-import { Link } from 'react-router-dom'
+import { Routes, Route, Link } from 'react-router-dom'
 import {DataContext} from '../../context/ProductContext'
 import '../css/ItemTiles.css'
 
@@ -20,7 +21,7 @@ class ItemTile extends React.Component {
     console.log(bookLink);
     console.log(`Name: ${name}`);
     console.log(`Genre: ${genre}`);
-    const {products, addCart} = this.context;
+    const {products, addCart, removeProduct, addedToCart} = this.context;
 
 		return (
 			<Card className="root">
@@ -37,15 +38,21 @@ class ItemTile extends React.Component {
           </CardActionArea>
         </Link>
           <CardActions>
+            {addedToCart(name) ?
             <Button onClick={()=> addCart(name, genre)} size="small" variant='contained'>
               Add to Cart
+            </Button>:
+            <Button onClick={()=> removeProduct(name)} size="small" variant='contained'>
+              Added
             </Button>
+            }
+            
             {isBook ?
-              <a href={bookLink} target='blank'>
+              <Link to={bookLink}>
                 <Button variant='contained' size='small' color='primary'>
                   Download
                 </Button>
-              </a> : null
+              </Link> : null
               }
           </CardActions>
         </Card>

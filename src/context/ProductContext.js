@@ -15,7 +15,8 @@ class DataProvider extends Component {
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 10,
                     "genre": "mens",
-                    "count": 1
+                    "count": 1,
+                    "addedToCart": false
                 },
                 {
                     "uid": 2,
@@ -25,7 +26,8 @@ class DataProvider extends Component {
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 12,
                     "genre": "mens",
-                    "count": 1
+                    "count": 1,
+                    "addedToCart": false
                 },
                 {
                     "uid": 3,
@@ -35,7 +37,8 @@ class DataProvider extends Component {
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 16,
                     "genre": "mens",
-                    "count": 1
+                    "count": 1,
+                    "addedToCart": false
                 },
                 {
                     "uid": 4,
@@ -45,7 +48,8 @@ class DataProvider extends Component {
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 24,
                     "genre": "mens",
-                    "count": 1
+                    "count": 1,
+                    "addedToCart": false
                 },
                 {
                     "uid": 5,
@@ -55,7 +59,8 @@ class DataProvider extends Component {
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 8,
                     "genre": "mens",
-                    "count": 1
+                    "count": 1,
+                    "addedToCart": false
                 },
                 {
                     "uid": 6,
@@ -65,7 +70,8 @@ class DataProvider extends Component {
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 42,
                     "genre": "mens",
-                    "count": 1
+                    "count": 1,
+                    "addedToCart": false
                 }
             ],
             Womens: [
@@ -77,7 +83,8 @@ class DataProvider extends Component {
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 26,
                     "genre": "womens",
-                    "count": 1
+                    "count": 1,
+                    "addedToCart": false
                 },
                 {
                     "uid": 8,
@@ -87,7 +94,8 @@ class DataProvider extends Component {
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 22,
                     "genre": "womens",
-                    "count": 1
+                    "count": 1,
+                    "addedToCart": false
                 },
                 {
                     "uid": 9,
@@ -97,7 +105,8 @@ class DataProvider extends Component {
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 43,
                     "genre": "womens",
-                    "count": 1
+                    "count": 1,
+                    "addedToCart": false
                 },
                 {
                     "uid": 10,
@@ -107,7 +116,8 @@ class DataProvider extends Component {
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 54,
                     "genre": "womens",
-                    "count": 1
+                    "count": 1,
+                    "addedToCart": false
                 },
                 {
                     "uid": 11,
@@ -117,7 +127,8 @@ class DataProvider extends Component {
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 28,
                     "genre": "womens",
-                    "count": 1
+                    "count": 1,
+                    "addedToCart": false
                 },
                 {
                     "uid": 12,
@@ -127,7 +138,8 @@ class DataProvider extends Component {
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 16,
                     "genre": "womens",
-                    "count": 1
+                    "count": 1,
+                    "addedToCart": false
                 }
             ],
             Childrens: [
@@ -139,7 +151,8 @@ class DataProvider extends Component {
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 64,
                     "genre": "children",
-                    "count": 1
+                    "count": 1,
+                    "addedToCart": false
                 },
                 {
                     "uid": 14,
@@ -149,7 +162,8 @@ class DataProvider extends Component {
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 100,
                     "genre": "children",
-                    "count": 1
+                    "count": 1,
+                    "addedToCart": false
                 },
                 {
                     "uid": 15,
@@ -159,7 +173,8 @@ class DataProvider extends Component {
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 53,
                     "genre": "children",
-                    "count": 1
+                    "count": 1,
+                    "addedToCart": false
                 },
                 {
                     "uid": 16,
@@ -169,7 +184,8 @@ class DataProvider extends Component {
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 47,
                     "genre": "children",
-                    "count": 1
+                    "count": 1,
+                    "addedToCart": false
                 },
                 {
                     "uid": 17,
@@ -179,7 +195,8 @@ class DataProvider extends Component {
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 140,
                     "genre": "children",
-                    "count": 1
+                    "count": 1,
+                    "addedToCart": false
                 },
                 {
                     "uid": 18,
@@ -189,7 +206,8 @@ class DataProvider extends Component {
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 25,
                     "genre": "children",
-                    "count": 1
+                    "count": 1,
+                    "addedToCart": false
                 }
             ],
             Books: [
@@ -200,9 +218,10 @@ class DataProvider extends Component {
                     "description": "Excepteur sint occaecat cupidatat non proident",
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 64,
-                    "downloadlink": "../books/pdfs/book1.pdf",
+                    "downloadlink": "../books/book1.pdf",
                     "genre": "book",
-                    "count": 1
+                    "count": 1,
+                    "addedToCart": false
                 },
                 {
                     "uid": 20,
@@ -211,9 +230,10 @@ class DataProvider extends Component {
                     "description": "Excepteur sint occaecat cupidatat non proident",
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 64,
-                    "downloadlink": "../books/pdfs/book2.pdf",
+                    "downloadlink": "../books/book2.pdf",
                     "genre": "book",
-                    "count": 1
+                    "count": 1,
+                    "addedToCart": false
                 },
                 {
                     "uid": 21,
@@ -222,9 +242,10 @@ class DataProvider extends Component {
                     "description": "Excepteur sint occaecat cupidatat non proident",
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 64,
-                    "downloadlink": "../books/pdfs/book3.pdf",
+                    "downloadlink": "../books/book3.pdf",
                     "genre": "book",
-                    "count": 1
+                    "count": 1,
+                    "addedToCart": false
                 },
                 {
                     "uid": 22,
@@ -233,9 +254,10 @@ class DataProvider extends Component {
                     "description": "Excepteur sint occaecat cupidatat non proident",
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 64,
-                    "downloadlink": "../books/pdfs/book4.pdf",
+                    "downloadlink": "../books/book4.pdf",
                     "genre": "book",
-                    "count": 1
+                    "count": 1,
+                    "addedToCart": false
                 },
                 {
                     "uid": 23,
@@ -244,9 +266,10 @@ class DataProvider extends Component {
                     "description": "Excepteur sint occaecat cupidatat non proident",
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 64,
-                    "downloadlink": "../books/pdfs/book5.pdf",
+                    "downloadlink": "../books/book5.pdf",
                     "genre": "book",
-                    "count": 1
+                    "count": 1,
+                    "addedToCart": false
                 },
                 {
                     "uid": 24,
@@ -255,9 +278,10 @@ class DataProvider extends Component {
                     "description": "Excepteur sint occaecat cupidatat non proident",
                     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
                     "price": 64,
-                    "downloadlink": "../books/pdfs/book6.pdf",
+                    "downloadlink": "../books/book6.pdf",
                     "genre": "book",
-                    "count": 1
+                    "count": 1,
+                    "addedToCart": false
                 }
             ]
         },
@@ -273,20 +297,24 @@ class DataProvider extends Component {
 
         if(check){
             var data="";
-            if (genre==="mens"){
+            if (genre=="mens"){
                 data = products.Mens.filter(product =>{
+                    product.addedToCart = true;
                     return product.title === title
                 })
-            }else if (genre==="womens"){
+            }else if (genre=="womens"){
                 data = products.Womens.filter(product =>{
+                    product.addedToCart = true;
                     return product.title === title
                 })
-            }else if (genre==="children"){
+            }else if (genre=="children"){
                 data = products.Childrens.filter(product =>{
+                    product.addedToCart = true;
                     return product.title === title
                 })
-            }else if (genre==="book"){
+            }else if (genre=="book"){
                 data = products.Books.filter(product =>{
+                    product.addedToCart = true;
                     return product.title === title
                 })
             }
@@ -295,6 +323,14 @@ class DataProvider extends Component {
         }else{
             alert("This product is already added in the cart")
         }
+    };
+
+    addedToCart = (title) => {
+        const {cart} = this.state;
+        const check = cart.every(item =>{
+            return item.title !== title
+        })
+        return check
     };
 
     clearCart = () => {
@@ -326,12 +362,29 @@ class DataProvider extends Component {
         this.getTotal();
     };
 
-    removeProduct = id =>{
+    removeProduct = title =>{
         if(window.confirm("Confirm Delete?")){
-            const {cart} = this.state;
+            const {products, cart} = this.state;
             cart.forEach((item, index) =>{
-                if(item.uid === id){
-                    cart.splice(index, 1)
+                if(item.title === title){
+                    cart.splice(index, 1);
+                    if (item.genre=="mens"){
+                        products.Mens.filter(product =>{
+                            product.addedToCart = false;
+                        })
+                    }else if (item.genre=="womens"){
+                        products.Womens.filter(product =>{
+                            product.addedToCart = false;
+                        })
+                    }else if (item.genre=="children"){
+                        products.Childrens.filter(product =>{
+                            product.addedToCart = false;
+                        })
+                    }else if (item.genre=="book"){
+                        products.Books.filter(product =>{
+                            product.addedToCart = false;
+                        })
+                    }
                 }
             })
             this.setState({cart: cart});
@@ -365,9 +418,9 @@ class DataProvider extends Component {
 
     render() {
         const {products, cart,total} = this.state;
-        const {addCart,reduction,increase,removeProduct,getTotal,clearCart} = this;
+        const {addCart,reduction,increase,removeProduct,getTotal,clearCart,addedToCart} = this;
         return (
-            <DataContext.Provider value={{products, addCart, cart, reduction,increase,removeProduct,total,getTotal,clearCart}}>
+            <DataContext.Provider value={{products, addCart, cart, reduction,increase,removeProduct,total,getTotal,clearCart,addedToCart}}>
                 {this.props.children}
             </DataContext.Provider>
         )
