@@ -18,9 +18,6 @@ class ItemTile extends React.Component {
 		const { imgSrc, name, genre, ...bookProps } = this.props;
 
     const { isBook, bookLink } = bookProps;
-    console.log(bookLink);
-    console.log(`Name: ${name}`);
-    console.log(`Genre: ${genre}`);
     const {products, addCart, removeProduct, addedToCart} = this.context;
 
 		return (

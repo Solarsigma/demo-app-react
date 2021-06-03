@@ -290,6 +290,11 @@ class DataProvider extends Component {
     };
 
     addCart = (title, genre) =>{
+
+        //Adding data to the dataLayer for Adobe Analytics
+        window.digitalData.cart.addToCart = true;
+        window.digitalData.cart.productName = title;
+
         const {products, cart} = this.state;
         const check = cart.every(item =>{
             return item.title !== title
@@ -318,7 +323,6 @@ class DataProvider extends Component {
                     return product.title === title
                 })
             }
-            console.log(data);
             this.setState({cart: [...cart,...data]})
         }else{
             alert("This product is already added in the cart")
@@ -333,11 +337,11 @@ class DataProvider extends Component {
         return check
     };
 
-    clearCart = () => {
-        if(window.confirm("Do you want to place the order?")){
-            this.setState({cart: []})
-            this.getTotal();  
-        }
+    placeOrder = () => {
+        var {cart} = this.state;
+        // To empty the cart, uncomment this lines
+        // this.setState({cart: []});
+        // this.getTotal();  
     };
 
     reduction = id =>{
@@ -364,6 +368,10 @@ class DataProvider extends Component {
 
     removeProduct = title =>{
         if(window.confirm("Confirm Delete?")){
+
+            window.digitalData.cart.addToCart = false;
+            window.digitalData.cart.productName = title;
+
             const {products, cart} = this.state;
             cart.forEach((item, index) =>{
                 if(item.title === title){
@@ -397,7 +405,7 @@ class DataProvider extends Component {
         const res = cart.reduce((prev, item) => {
             return prev + (item.price * item.count);
         },0)
-        this.setState({total: res})
+        this.setState({total: res});
     };
     
     componentDidUpdate(){
@@ -418,9 +426,9 @@ class DataProvider extends Component {
 
     render() {
         const {products, cart,total} = this.state;
-        const {addCart,reduction,increase,removeProduct,getTotal,clearCart,addedToCart} = this;
+        const {addCart,reduction,increase,removeProduct,getTotal,placeOrder,addedToCart} = this;
         return (
-            <DataContext.Provider value={{products, addCart, cart, reduction,increase,removeProduct,total,getTotal,clearCart,addedToCart}}>
+            <DataContext.Provider value={{products, addCart, cart, reduction,increase,removeProduct,total,getTotal,placeOrder,addedToCart}}>
                 {this.props.children}
             </DataContext.Provider>
         )

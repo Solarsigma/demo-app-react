@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import mensImage from '../images/Main/mens.jpg'
 import './cart.css'
 import {DataContext} from '../context/ProductContext'
 
@@ -14,17 +13,17 @@ class Cart extends React.Component {
 
 	render() {
         window.digitalData.page.pageName = "Cart page"; 
-
+        
 		const {cart,increase,reduction,removeProduct,total} = this.context;
         const imgArr = cart.map((product) => (require(`../subsectionFiles/images/${product.genre}/${product.src}`)));
 
-        console.log(imgArr);
+        window.digitalData.cart.itemsInCart = cart;
+        window.digitalData.cart.totalRevenue = total;
+
         var cartEmpty = true;
         if (cart.length>0){
             cartEmpty = false;
         }
-        console.log("Empty cart");
-        console.log(cartEmpty);
 		return (
 			<>  
             {

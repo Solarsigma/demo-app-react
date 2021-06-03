@@ -7,12 +7,12 @@ class OrderPlaced extends React.Component {
 	static contextType = DataContext;
 
     componentDidMount(){
-        this.context.clearCart();
+        this.context.placeOrder();
     }
 
 	render() {
-		const {clearCart} = this.context;
-        
+		const {placeOrder} = this.context;
+        window.digitalData.page.pageName = "Order placed page";
 		return (
 			<>
                 <div className="a">

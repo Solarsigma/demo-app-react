@@ -18,18 +18,24 @@ function SingleElement(props){
     );
 }
 
-const Main = () => (
-	<>
-    <div className="mainbox">
-		<SingleElement image = {mensImage} name = "Mens" link="/mens"/>
-        <SingleElement image = {womensImage} name = "Womens" link="/womens"/>
-    </div>
-    <div className="mainbox">
-        <SingleElement image = {childrensImage} name = "Childrens" link="/children"/>
-        <SingleElement image = {booksImage} name = "Books" link="/book"/>
-    </div>
-    <hr />
-	</>
-);
+class Main extends React.Component { 
+
+	render() {
+        window.digitalData.page.pageName = "Main page"; 
+		return (
+			<>
+                <div className="mainbox">
+                    <SingleElement image = {mensImage} name = "Mens" link="/mens"/>
+                    <SingleElement image = {womensImage} name = "Womens" link="/womens"/>
+                </div>
+                <div className="mainbox">
+                    <SingleElement image = {childrensImage} name = "Childrens" link="/children"/>
+                    <SingleElement image = {booksImage} name = "Books" link="/book"/>
+                </div>
+                <hr />
+            </>
+		);
+	}
+}
 
 export default Main
