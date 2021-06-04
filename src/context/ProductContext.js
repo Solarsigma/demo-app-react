@@ -349,6 +349,8 @@ class DataProvider extends Component {
         cart.forEach(item =>{
             if(item.uid === id){
                 item.count === 1 ? item.count = 1 : item.count -=1;
+                window.digitalData.cart.changed.productName = item.title;
+                window.digitalData.cart.changed.newCount = item.count;
             }
         })
         this.setState({cart: cart});
@@ -360,6 +362,8 @@ class DataProvider extends Component {
         cart.forEach(item =>{
             if(item.uid === id){
                 item.count += 1;
+                window.digitalData.cart.changed.productName = item.title;
+                window.digitalData.cart.changed.newCount = item.count;
             }
         })
         this.setState({cart: cart});

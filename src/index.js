@@ -17,6 +17,8 @@ import ProductDetails from './subsectionFiles/components/ProductDetails'
 import Error404 from './subsectionFiles/components/Error404'
 import DataProvider from './context/ProductContext'
 
+localStorage.clear();
+
 ReactDOM.render(
   <DataProvider>
     <Router>
